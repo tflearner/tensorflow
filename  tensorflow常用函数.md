@@ -25,7 +25,7 @@ print(sess.run(d))
 # [3 3]]
 ```
 
-	##  *tf.get_variable*
+## *tf.get_variable*
 
 ```python
 get_variable(name, shape=None, dtype=dtypes.float32, initializer=None,regularizer=None, trainable=True, collections=None,caching_device=None, partitioner=None, validate_shape=True,custom_getter=None):
