@@ -127,3 +127,17 @@ caching_device: default caching device for variables within this scope.
 partitioner: default partitioner for variables within this scope. 
 custom_getter: default custom getter for variables within this scope.
 
+## *tf.nn.conv2d*
+
+```python
+tf.nn.conv2d(input, filter, strides, padding, use_cudnn_on_gpu=None, name=None)
+```
+
+input :输入图像，要求是一个Tensor，具有[batch(图片数量), in_height, in_width, in_channels(图像通道数)]的shape, 4维的tensor， 要求类型是float32和float64之一
+
+filter :相当于CNN的卷积核，要求是一个Tensor，具有[filter_height, filter_width, in_channels, out_channels(卷积核个数)]这样的shape
+
+strides:卷积时在图像每一维的步长, 是一个一维的向量, 长度4
+
+padding: string类型的量, SAME或VALID, 决定卷积方式
+
